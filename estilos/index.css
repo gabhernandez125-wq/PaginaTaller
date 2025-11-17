@@ -1,0 +1,86 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: #f4f8ff;
+    color: #222;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    color: #003c8f;
+    font-weight: 700;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 28px;
+    color: #0055cc;
+}
+
+
+.catalogo {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.card h5, .card h6 {
+    font-size: 18px;
+    color: #003c8f;
+    font-weight: 600;
+}
+
+
+.descripcion {
+    margin: 40px auto;
+    max-width: 900px;
+    background: linear-gradient(135deg, #eaf2ff, #d1e4ff);
+    padding: 25px;
+    border-left: 7px solid #005bea;
+    border-radius: 12px;
+    font-size: 18px;
+    line-height: 1.7;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.frase-final {
+    color: #005bea;
+    font-size: 22px;
+}
+
+footer {
+    background-color: #dceaff;
+    text-align: center;
+    padding: 20px;
+    font-size: 18px;
+    margin-top: 40px;
+}
