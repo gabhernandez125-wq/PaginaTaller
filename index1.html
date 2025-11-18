@@ -1,5 +1,6 @@
 
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +8,27 @@
     <link rel="stylesheet" href="estilos/estilos.css">
 </head>
 <body>
-
-    <header class="site-header">
+<header class="site-header">
         <div class="logo">
-            <!-- Coloca tu logo real en images/logo.png -->
-            <img src="images/logo.png" alt="Logo">
-            <div style="font-weight:700;color:#1a1aff;">LINGsCARS.com</div>
+            <img src="imagenes/WhatsApp Image 2025-11-18 at 4.30.39 PM.jpeg" alt="Logo">
+            <div class="brand" aria-label="Ling's Cars">
+                <span class="brand--left">LINGS</span>
+                <span class="brand--right">CARS</span>
+            </div>
         </div>
-
+ 
         <nav class="main-nav" aria-label="Principal">
-            <a href="#">arrendamiento</a>
+            <a href="#">Inicio</a>
+            <a href="#">sobre nosotros</a>
             <a href="#">inventario</a>
-            <a href="#">contactos</a>
+            <a href="#">contacto</a>
         </nav>
     </header>
 
     <section class="hero" role="banner">
         <div class="container">
-            <div class="breadcrumb">Home &gt; About Us</div>
-            <h1>sobre Nosotros/h1>
+            <div class="breadcrumb">Inicio &gt; Sobre nosotros</div>
+            <h1>Sobre Nosotros</h1>
         </div>
     </section>
 
@@ -51,8 +54,7 @@
             </div>
 
             <aside class="media" aria-hidden="true">
-                <!-- sustituye por la foto real en images/ling-car.jpg -->
-                <img src="images/ling-car.jpg" alt="Foto representativa">
+                <img src="imagenes/Gemini_Generated_Image_66uxba66uxba66ux.png" alt="Foto representativa">
             </aside>
         </article>
 
@@ -61,7 +63,47 @@
             <p>Estamos basados en Newcastle upon Tyne, Inglaterra. Para consultas contáctanos en: <a href="mailto:sales@lingscars.com">sales@lingscars.com</a></p>
         </section>
 
-        <!-- Más secciones: copia tus textos originales si lo deseas -->
+        <!-- Nuevo: Catálogo estilo tarjetas -->
+        <section class="catalogo">
+            <h2 class="catalogo-title">Vehículos Disponibles</h2>
+            <div class="cards-grid">
+                <article class="card">
+                    <img src="imagenes/toyota.webp" alt="Car 1">
+                    <h3>Toyota Corolla 2.0 – CVT</h3>
+                    <div class="price">$18,500</div>
+                    <p class="meta">Gasolina · 45,000 km · Automático</p>
+                    <div class="card-actions">
+                        <a class="btn" href="#">Ver detalles</a>
+                        <a class="btn btn-outline" href="#">Contactar</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="imagenes/honda.webp" alt="Car 2">
+                    <h3>Honda Civic 2025 – Automático</h3>
+                    <div class="price">$21,300</div>
+                    <p class="meta">Gasolina · 12,000 km · Automático</p>
+                    <div class="card-actions">
+                        <a class="btn" href="#">Ver detalles</a>
+                        <a class="btn btn-outline" href="#">Contactar</a>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <img src="imagenes/mazda.png" alt="Car 3">
+                    <h3>Mazda 3 2024 – SkyActiv-G</h3>
+                    <div class="price">$23,100</div>
+                    <p class="meta">Gasolina · 8,000 km · Automático</p>
+                    <div class="card-actions">
+                        <a class="btn" href="#">Ver detalles</a>
+                        <a class="btn btn-outline" href="#">Contactar</a>
+                    </div>
+                </article>
+
+                <!-- Duplica/añade más .card según necesites -->
+            </div>
+        </section>
+
         <section class="seccion-info">
             <h2>Entrevistas y prensa</h2>
             <p>
@@ -70,6 +112,23 @@
         </section>
 
     </main>
+    <section class="contacto container" aria-labelledby="contacto-title">
+        <h2 id="contacto-title">Contacto</h2>
+        <div class="contacto-grid">
+            <div class="contact-item">
+                <strong>Teléfono:</strong>
+                <a href="tel:+573001112233">+57 300 111 2233</a>
+            </div>
+            <div class="contact-item">
+                <strong>Email:</strong>
+                <a href="mailto:ventas@lightcars.com">ventas@lightcars.com</a>
+            </div>
+            <div class="contact-item">
+                <strong>Dirección:</strong>
+                <span>Calle Principal 123, Ciudad</span>
+            </div>
+        </div>
+    </section>
 
     <footer>
         &copy; 2025 LINGsCARS (Inspiración). Todos los derechos reservados.
