@@ -1,9 +1,9 @@
- /* ...existing code... */
+
 *{ box-sizing: border-box; margin: 0; padding: 0; }
 html,body { height: 100%; font-family: "Helvetica Neue", Arial, sans-serif; color: #222; background:#f3f8ff; }
 a { color: #0b66c3; text-decoration: none; }
 
-/* Header tweaks (estilo tipo Lings) */
+
 header.site-header {
     background: #fff;
     border-bottom: 1px solid rgba(0,0,0,0.06);
@@ -31,23 +31,23 @@ nav.main-nav a {
     box-shadow:0 4px 10px rgba(10,70,140,0.04);
 }
 
-/* ...existing code... */
+
 .hero {
-    /* agrega una capa blanca semitransparente + patrón (fallback) */
+    
     background-image: linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)), url('../imagenes/pattern.jpg');
     background-size: cover;
     background-position: center;
-    color: #0b66c3; /* texto oscuro para legibilidad */
+    color: #0b66c3; 
     padding: 40px 20px 48px;
     position: relative;
 }
 
 .hero {
-    /* capa blanca semitransparente + patrón (fallback) */
+    
     background-image: linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)), url('../imagenes/pattern.jpg');
     background-size: cover;
     background-position: center;
-    color: #0b66c3; /* texto oscuro para legibilidad */
+    color: #0b66c3; 
     padding: 40px 20px 48px;
     position: relative;
 }
@@ -67,10 +67,10 @@ nav.main-nav a {
 }
 
 
-/* CONTENEDOR PRINCIPAL */
+
 .container { max-width: 1150px; margin: 26px auto; padding: 0 20px; }
 
-/* Estilo para secciones */
+
 .seccion-info {
     border-left: 6px solid #ffcc00;
     padding: 22px 28px;
@@ -93,13 +93,13 @@ nav.main-nav a {
 }
 .seccion-info .fundadora { font-weight: 700; color:#1a1aff; }
 
-/* Layout de artículo con imagen al lado (dos columnas) */
+
 .article-row { display:flex; gap:24px; align-items:flex-start; margin-bottom:28px; flex-wrap:wrap; }
 .article-row .text { flex:1 1 620px; min-width: 280px; }
 .article-row .media { width:260px; flex:0 0 260px; }
 .article-row .media img { width:100%; height:auto; display:block; border-radius:6px; }
 
-/* Catalogo - tarjetas */
+
 .catalogo { margin-top: 20px; }
 .catalogo-title { color:#0b66c3; font-size:28px; text-align:center; margin-bottom:18px; font-weight:700; }
 
@@ -123,21 +123,19 @@ nav.main-nav a {
 .meta { color:#6b7280; font-size:13px; margin-bottom:12px; }
 
 .card-actions { display:flex; gap:10px; margin-top:6px; }
-/* ...existing code... */
 
-/* --- REEMPLAZAR LOS BLOQUES .hero y nav.main-nav/brand por ESTE --- */
 
 .hero {
-    /* capa blanca semitransparente + patrón (fallback) */
+    
     background-image: linear-gradient(rgba(255,255,255,0.88), rgba(255,255,255,0.88)), url('../imagenes/pattern.jpg');
     background-size: cover;
     background-position: center;
     color: #0b66c3;
-    /* reducir padding vertical para hacer el fondo "más pequeño" */
-    padding: 12px 20px;   /* <- menos espacio arriba/abajo */
+    
+    padding: 12px 20px;   
     position: relative;
-    /* opcional: limitar la altura si quieres que nunca sea muy alta */
-    max-height: 200px;    /* ajusta o elimina según prefieras */
+    
+    max-height: 200px;    
     overflow: hidden;
 }
 .hero .breadcrumb {
@@ -147,11 +145,11 @@ nav.main-nav a {
 }
 .hero h1 {
     font-family: "Impact", Charcoal, sans-serif;
-    font-size: 34px; /* más pequeño para ahorrar espacio */
+    font-size: 34px; 
     color: #0b66c3;
     margin: 4px 0;
 }
-/* Branding: título con dos tonos */
+
 .brand {
     font-weight: 800;
     font-size: 32px;
@@ -172,7 +170,7 @@ nav.main-nav a {
     color: transparent;
 }
 
-/* Menú tipo "pill" y punto negro */
+
 nav.main-nav {
     display:flex;
     gap:10px;
@@ -217,19 +215,18 @@ nav.main-nav a:hover {
     border-color: rgba(255,255,255,0.06);
 }
 
-/* Responsive */
+
 @media (max-width:600px){
     .brand { font-size:20px; }
     nav.main-nav { padding:6px 8px; gap:6px; }
     nav.main-nav a { padding:6px 10px; font-size:14px; }
 }
 
-/* ...existing code... */
 
-/* Footer simple */
+
 footer { padding:28px 40px; text-align:center; color:#666; font-size:14px; margin-top:40px; background:#fafafa; border-top:1px solid #eee; }
 
-/* Responsive */
+
 @media (max-width:880px){
     header.site-header { padding:14px 18px; }
     .hero h1 { font-size:28px; }
