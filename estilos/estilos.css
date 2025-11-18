@@ -1,0 +1,85 @@
+ *{ box-sizing: border-box; margin: 0; padding: 0; }
+        html,body { height: 100%; font-family: "Helvetica Neue", Arial, sans-serif; color: #222; }
+        a { color: #b017ff; text-decoration: underline; }
+
+        /* CABECERA */
+        header.site-header {
+            background: #fff;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 18px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        header .logo {
+            display:flex;
+            align-items:center;
+            gap:12px;
+        }
+        header .logo img { height:58px; display:block; }
+        nav.main-nav { display:flex; gap:20px; font-size:15px; color:#333; align-items:center; }
+        nav.main-nav a { color:#333; text-decoration:none; padding:6px 4px; }
+
+        /* HERO */
+        .hero {
+            background-image: url('images/pattern.jpg'); /* coloca aquí el patrón (opcional) */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 60px 40px;
+            position: relative;
+        }
+        .hero .breadcrumb { color: rgba(255,255,255,0.9); margin-bottom: 8px; font-size:14px; opacity:0.95; }
+        .hero h1 {
+            font-family: "Impact", Charcoal, sans-serif;
+            font-size: 48px;
+            letter-spacing: 1px;
+            color: #fff;
+            text-shadow: 0 2px 0 rgba(0,0,0,0.35);
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container { max-width: 1100px; margin: 36px auto; padding: 0 20px; }
+
+        /* Estilo para secciones adaptado al look de las imágenes */
+        .seccion-info {
+            border-left: 6px solid #ffcc00;
+            padding: 22px 28px;
+            margin-bottom: 28px;
+            background: #fff;
+            box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+            border-radius: 3px;
+        }
+        .seccion-info h2 {
+            color: #1a1aff;
+            font-size: 18px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+        .seccion-info p {
+            line-height: 1.7;
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 12px;
+        }
+        .seccion-info .fundadora { font-weight: 700; color:#1a1aff; }
+
+        /* Layout de artículo con imagen al lado (dos columnas) */
+        .article-row { display:flex; gap:24px; align-items:flex-start; margin-bottom:28px; flex-wrap:wrap; }
+        .article-row .text { flex:1 1 620px; min-width: 280px; }
+        .article-row .media { width:260px; flex:0 0 260px; }
+        .article-row .media img { width:100%; height:auto; display:block; border-radius:6px; }
+
+        /* Footer simple */
+        footer { padding:28px 40px; text-align:center; color:#666; font-size:14px; margin-top:40px; background:#fafafa; border-top:1px solid #eee; }
+
+        /* Responsive */
+        @media (max-width:880px){
+            header.site-header { padding:14px 18px; }
+            .hero h1 { font-size:34px; }
+            .article-row { flex-direction: column-reverse; }
+            .article-row .media { width:100%; flex-basis:100%; }
+        }
